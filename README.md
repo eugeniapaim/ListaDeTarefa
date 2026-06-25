@@ -1,60 +1,230 @@
-# CursoAngularListaDeTarefas
+# ✅ Lista de Tarefas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
+Aplicação de gerenciamento de tarefas desenvolvida com **Angular**, permitindo adicionar, visualizar, concluir e organizar atividades de forma simples e intuitiva.
 
-## Development server
+## 📋 Sobre o Projeto
 
-To start a local development server, run:
+Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais do Angular, incluindo:
+
+- Criação de componentes
+- Data Binding
+- Diretivas estruturais
+- Manipulação de eventos
+- Organização da aplicação em módulos e componentes
+- Gerenciamento de estado local
+- Boas práticas de desenvolvimento Front-End
+
+O projeto foi criado utilizando **Angular CLI 22.0.0**. [1](https://github.com/eugeniapaim/ListaDeTarefa)
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+### Angular
+
+Framework desenvolvido pelo Google para construção de aplicações web modernas baseadas em componentes. O Angular fornece uma arquitetura robusta para aplicações escaláveis e de fácil manutenção. [1](https://github.com/eugeniapaim/ListaDeTarefa)
+
+### TypeScript
+
+Superset do JavaScript que adiciona tipagem estática, tornando o código mais seguro, legível e escalável.
+
+### HTML5
+
+Responsável pela estrutura e organização do conteúdo da interface.
+
+### SCSS
+
+Pré-processador CSS utilizado para facilitar a manutenção e reutilização de estilos.
+
+### Angular CLI
+
+Ferramenta oficial do Angular utilizada para:
+
+- Criação do projeto
+- Geração de componentes
+- Build da aplicação
+- Execução do servidor local
+- Testes automatizados
+
+[1](https://github.com/eugeniapaim/ListaDeTarefa)
+
+---
+
+## 🏗️ Arquitetura do Projeto
+
+A aplicação segue a arquitetura baseada em componentes do Angular.
+
+```text
+src/
+│
+├── app/
+│   ├── components/
+│   ├── models/
+│   ├── services/
+│   └── app.component
+│
+├── assets/
+├── styles/
+└── main.ts
+```
+
+### Componentes
+
+Os componentes são responsáveis por:
+
+- Exibir a interface
+- Receber interações do usuário
+- Atualizar os dados exibidos
+
+### Serviços
+
+Os serviços centralizam regras de negócio e manipulação de dados, promovendo reutilização e desacoplamento.
+
+### Models
+
+Representam a estrutura dos dados utilizados pela aplicação.
+
+---
+
+## ⚙️ Funcionalidades
+
+- ✅ Adicionar tarefas
+- ✅ Visualizar tarefas cadastradas
+- ✅ Marcar tarefas como concluídas
+- ✅ Remover tarefas
+- ✅ Atualização dinâmica da interface
+- ✅ Organização das atividades em uma única tela
+
+---
+
+## 💡 Conceitos do Angular Aplicados
+
+### Interpolação
+
+Exibição dinâmica de dados na interface.
+
+```html
+{{ tarefa.nome }}
+```
+
+### Property Binding
+
+Vinculação de propriedades entre componente e template.
+
+```html
+[disabled]="campoVazio"
+```
+
+### Event Binding
+
+Captura de eventos do usuário.
+
+```html
+(click)="adicionarTarefa()"
+```
+
+### Two-Way Data Binding
+
+Sincronização entre interface e componente.
+
+```html
+[(ngModel)]="novaTarefa"
+```
+
+### Diretivas
+
+Utilização de diretivas Angular para renderização dinâmica.
+
+```html
+*ngFor
+*ngIf
+```
+
+---
+
+## ▶️ Como Executar
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/eugeniapaim/ListaDeTarefa.git
+```
+
+### 2. Acessar a Pasta
+
+```bash
+cd ListaDeTarefa
+```
+
+### 3. Instalar as Dependências
+
+```bash
+npm install
+```
+
+### 4. Executar o Projeto
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+O projeto ficará disponível em:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+[1](https://github.com/eugeniapaim/ListaDeTarefa)
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🧪 Testes
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Para executar os testes da aplicação:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+O projeto utiliza o **Vitest** para execução dos testes. [1](https://github.com/eugeniapaim/ListaDeTarefa)
 
-For end-to-end (e2e) testing, run:
+---
+
+## 📦 Build de Produção
 
 ```bash
-ng e2e
+ng build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Os arquivos gerados serão armazenados na pasta:
 
-## Additional Resources
+```text
+dist/
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# ListaDeTarefa
+[1](https://github.com/eugeniapaim/ListaDeTarefa)
+
+---
+
+## 🎯 Objetivos de Aprendizagem
+
+Este projeto foi desenvolvido para consolidar conhecimentos em:
+
+- Angular
+- TypeScript
+- Componentização
+- Boas práticas de Front-End
+- Organização e manutenção de código
+- Manipulação de eventos e estados
+
+---
+
+## 👩‍💻 Autora
+
+**Eugênia Silva Paim**
+
+GitHub: https://github.com/eugeniapaim
+
+---
+
+⭐ Se este projeto foi útil para você, deixe uma estrela no repositório!
