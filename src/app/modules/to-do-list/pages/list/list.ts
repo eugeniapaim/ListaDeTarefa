@@ -87,6 +87,8 @@ export class List {
       title: "Tem certeza que deseja excluir o itenm?",
       text: "Essa ação não pode ser desfeita!",
       icon: "warning",
+      iconColor: "var(--primary)",
+      background: "var(--bg-010)",
       showCancelButton: true,
       confirmButtonColor: "var(--secondary)",
       cancelButtonColor: "var(--primary)",
